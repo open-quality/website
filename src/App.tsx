@@ -5,14 +5,16 @@ import './App.css'
 
 function AnimatedSphere() {
   return (
-    <Sphere args={[1, 100, 200]} scale={2.5}>
+    <Sphere args={[1, 128, 128]} scale={2.5}>
       <MeshDistortMaterial
         color="#007AFF"
         attach="material"
-        distort={0.3}
-        speed={1.5}
-        roughness={0.2}
-        metalness={0.8}
+        distort={0.6}
+        speed={2}
+        roughness={0}
+        metalness={0.1}
+        opacity={0.9}
+        transparent={true}
       />
     </Sphere>
   )
@@ -25,10 +27,10 @@ function App() {
       <nav className="nav">
         <div className="container">
           <div className="nav-content">
-            <div className="logo">
+            <a href="#" className="logo">
               <img src="/logo.svg" alt="OpenQuality" />
               <span>OpenQuality</span>
-            </div>
+            </a>
             <div className="nav-links">
               <a href="#features">Features</a>
               <a href="#use-cases">Use Cases</a>
