@@ -186,8 +186,8 @@ Example:
 
 ## Related Links
 
-- [OpenQuality Platform](https://github.com/openquality/platform) - Main platform repository
-- [Platform Documentation](https://github.com/openquality/platform/tree/main/docs) - Technical documentation
+- [OpenQuality Platform](https://github.com/open-quality/oq-platform) - Main platform repository
+- [Platform Documentation](https://github.com/open-quality/oq-platform/tree/main/docs) - Technical documentation
 - [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) - 3D graphics documentation
 - [Framer Motion](https://www.framer.com/motion/) - Animation library docs
 - [Vite](https://vitejs.dev/) - Build tool documentation

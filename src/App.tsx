@@ -35,7 +35,7 @@ function App() {
               <a href="#features">Features</a>
               <a href="#use-cases">Use Cases</a>
               <a href="#docs">Docs</a>
-              <a href="https://github.com/openquality" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://github.com/open-quality" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ function App() {
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               <a href="#get-started" className="btn btn-primary">Get Started</a>
-              <a href="https://github.com/openquality" className="btn btn-secondary">View on GitHub</a>
+              <a href="https://github.com/open-quality" className="btn btn-secondary">View on GitHub</a>
             </motion.div>
           </div>
         </div>
@@ -354,7 +354,7 @@ make dev-ui
 # Access at http://localhost:9000`}</code></pre>
           </motion.div>
           <div className="cta-buttons">
-            <a href="https://github.com/openquality" className="btn btn-primary">View on GitHub</a>
+            <a href="https://github.com/open-quality" className="btn btn-primary">View on GitHub</a>
             <a href="#docs" className="btn btn-secondary">Read Documentation</a>
           </div>
         </div>
@@ -369,7 +369,7 @@ make dev-ui
               <span>OpenQuality</span>
             </div>
             <div className="footer-links">
-              <a href="https://github.com/openquality">GitHub</a>
+              <a href="https://github.com/open-quality">GitHub</a>
               <a href="#docs">Documentation</a>
               <a href="#features">Features</a>
               <a href="#use-cases">Use Cases</a>
