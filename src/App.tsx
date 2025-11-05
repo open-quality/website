@@ -163,7 +163,7 @@ function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Open Source Test Management
+              From Test To Trust
             </motion.h1>
             <motion.p
               className="hero-subtitle"
@@ -171,7 +171,7 @@ function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              A modern, lightweight platform that brings clarity, traceability, and actionable insights to software quality assurance
+              An <b className="text-white">Open Source</b>, modern, lightweight platform that brings clarity, traceability, and actionable insights to software quality assurance
             </motion.p>
             <motion.div
               className="hero-buttons"
