@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      {% if title %}{{ title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}
+    </title>
+    <meta name="description" content="{{ site.description }}" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body class="page-{{ page.fileSlug or 'home' }}">
+    <div class="app-shell">
+      <nav class="nav">
+        <div class="container">
+          <div class="nav-content">
+            <a class="logo" href="/">
+              <img src="/logo.svg" alt="OpenQuality logo" />
+              <span>{{ site.title }}</span>
+            </a>
+            <div class="nav-links">
+              {% for item in site.nav %}
+                <a
+                  href="{{ item.url }}"
+                  {% if not item.external and page.url == item.url %}aria-current="page"{% endif %}
+                  {% if item.external %}target="_blank" rel="noreferrer"{% endif %}
+                >{{ item.label }}</a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <div class="container">
+          {% if hero %}
+            {% include "components/hero.njk" %}
+          {% endif %}
+          {{ content | safe }}
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <img src="/logo.svg" alt="OpenQuality" />
+              <span>{{ site.title }}</span>
+            </div>
+            <div class="footer-links">
+              {% for item in site.footerLinks %}
+                <a href="{{ item.url }}">{{ item.label }}</a>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>MIT License · Open Source Test Management Platform</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    {% if hero %}
+      <script type="module" src="/assets/js/hero-scene.js" defer></script>
+    {% endif %}
+  </body>
+</html>

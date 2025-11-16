@@ -1,0 +1,38 @@
+---
+layout: layouts/base.njk
+title: Platform Features
+permalink: /features/index.html
+---
+<section class="section">
+  <div class="page-intro">
+    <h1>Features</h1>
+    <p>Opinionated defaults make OpenQuality fast to adopt while the API keeps it flexible. Mix and match capabilities depending on the maturity of your engineering org.</p>
+  </div>
+  <div class="grid-3">
+    {% for feature in highlights.features %}
+      <div class="card">
+        <div class="icon">{{ feature.icon }}</div>
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="grid-2">
+    <div>
+      <h2>Customer-grade experience</h2>
+      <p class="text-large">Ship a CNCF-style website that mirrors the polish of the platform itself. Three.js visuals keep prospects engaged while the Eleventy stack stays simple to maintain.</p>
+    </div>
+    <div>
+      <h2>Integrate everywhere</h2>
+      <p class="text-large">Use the REST API or CLI to submit executions, attach environments, and pull back aggregated metrics for executive reports.</p>
+      <ul class="feature-list">
+        <li>GitHub Actions, CircleCI, GitLab CI, Jenkins</li>
+        <li>Language-agnostic payloads</li>
+        <li>Out-of-the-box Grafana dashboards</li>
+      </ul>
+    </div>
+  </div>
+</section>

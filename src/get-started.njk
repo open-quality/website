@@ -1,0 +1,37 @@
+---
+layout: layouts/base.njk
+title: Get Started
+permalink: /get-started/index.html
+---
+<section class="section">
+  <div class="page-intro">
+    <h1>Get Started</h1>
+    <p>Boot OpenQuality locally, hook it into CI, and customize the UI. Follow the canonical make targets from the main platform repo.</p>
+  </div>
+  <div class="code-block">
+    <pre><code>{% for line in highlights.quickStart %}
+{{ line }}
+{% endfor %}</code></pre>
+  </div>
+  <div class="cta-buttons">
+    <a class="btn btn-primary" href="https://github.com/open-quality" target="_blank" rel="noreferrer">View on GitHub</a>
+    <a class="btn btn-secondary" href="/docs/">Read the docs</a>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="grid-2">
+    <div>
+      <h2>Local development tips</h2>
+      <ul class="feature-list">
+        <li>Use <code>npm run dev</code> to run Eleventy with hot reload while editing markdown.</li>
+        <li>Store marketing stories in <code>content/articles</code> or <code>content/short</code>.</li>
+        <li>Keep static assets like favicons in <code>public/</code>; Eleventy copies them verbatim.</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Deployment</h2>
+      <p class="text-large">GitHub Actions builds <code>dist/</code> and ships it to Pages. For manual previews, run <code>npm run build</code> and serve <code>dist/</code> locally.</p>
+    </div>
+  </div>
+</section>

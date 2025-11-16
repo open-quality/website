@@ -1,0 +1,36 @@
+---
+layout: layouts/base.njk
+title: Use Cases
+permalink: /use-cases/index.html
+---
+<section class="section">
+  <div class="page-intro">
+    <h1>Use Cases</h1>
+    <p>Every team treats testing differently, so we packaged the most common workflows into actionable playbooks. Start with the scenario that matches your reality and extend from there.</p>
+  </div>
+  <div class="grid-2">
+    {% for useCase in highlights.useCases %}
+      <div class="card">
+        <h3>{{ useCase.title }}</h3>
+        <p>{{ useCase.description }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="grid-2">
+    <div>
+      <h2>Story-driven content</h2>
+      <p class="text-large">Short social-ready stories live under <code>content/</code>; publish them alongside the marketing site to illustrate the pains OpenQuality solves.</p>
+    </div>
+    <div>
+      <h2>Quality KPIs</h2>
+      <ul class="feature-list">
+        <li>Pass/fail rates grouped by environment</li>
+        <li>Flaky test watchlists for triage meetings</li>
+        <li>Lead-time reports across releases</li>
+      </ul>
+    </div>
+  </div>
+</section>
