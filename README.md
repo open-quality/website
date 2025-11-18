@@ -1,4 +1,4 @@
-# OpenQuality.cloud
+# openquality.ai
 
 Marketing site for OpenQuality, rebuilt with [Eleventy](https://www.11ty.dev/) and vanilla Three.js so content teams can publish fast while keeping the immersive hero experience.
 
@@ -12,7 +12,7 @@ Marketing site for OpenQuality, rebuilt with [Eleventy](https://www.11ty.dev/) a
 ## Project Structure
 
 ```
-openquality.cloud/
+openquality.ai/
 ├── CNAME                     # Custom domain passed through Eleventy
 ├── public/                   # Favicons, logos, and other static assets
 ├── src/
@@ -49,4 +49,4 @@ npm run preview      # Alternative watcher (same as dev)
 
 ## Deployment
 
-GitHub Actions installs dependencies, runs `npm run build`, and publishes `dist/` to GitHub Pages using the existing workflow. The `CNAME` file is passed through Eleventy so the `openquality.cloud` domain remains pointed at Pages.
+GitHub Actions installs dependencies, runs `npm run build`, and publishes `dist/` to GitHub Pages using the existing workflow. The `CNAME` file is passed through Eleventy so the `openquality.ai` domain remains pointed at Pages.
